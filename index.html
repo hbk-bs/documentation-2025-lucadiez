@@ -3,39 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projekte</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Projekt-Zeitleiste</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="logo-container">
     <img src="assets/img/logo.png" alt="Logo" class="logo" />
   </header>
 
-  <main class="grid">
-    <a href="https://projekt1.de" class="project-tile">
-      <img src="assets/img/placeholder1.jpg" alt="Projekt 1 Vorschau" />
-      <span class="project-name">Projekt 1</span>
-    </a>
-    <a href="https://projekt2.de" class="project-tile">
-      <img src="assets/img/placeholder2.jpg" alt="Projekt 2 Vorschau" />
-      <span class="project-name">Projekt 2</span>
-    </a>
-    <a href="https://projekt3.de" class="project-tile">
-      <img src="assets/img/placeholder3.jpg" alt="Projekt 3 Vorschau" />
-      <span class="project-name">Projekt 3</span>
-    </a>
-    <a href="https://projekt4.de" class="project-tile">
-      <img src="assets/img/placeholder4.jpg" alt="Projekt 4 Vorschau" />
-      <span class="project-name">Projekt 4</span>
-    </a>
-    <a href="https://projekt5.de" class="project-tile">
-      <img src="assets/img/placeholder5.jpg" alt="Projekt 5 Vorschau" />
-      <span class="project-name">Projekt 5</span>
-    </a>
-    <a href="https://reflexion.de" class="project-tile">
-      <img src="assets/img/placeholder6.jpg" alt="Reflexion Vorschau" />
-      <span class="project-name">Reflexion</span>
-    </a>
+  <main class="timeline">
+    <div class="timeline-line"></div>
+
+    <!-- Projekt 1 -->
+    <div class="event right">
+      <div class="event-content">
+        <a href="https://projekt1.de" class="project-tile">
+          <img src="assets/img/placeholder1.jpg" alt="Projekt 1 Vorschau" />
+          <span class="project-name">Projekt 1</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projekt 2 -->
+    <div class="event left">
+      <div class="event-content">
+        <a href="https://projekt2.de" class="project-tile">
+          <img src="assets/img/placeholder2.jpg" alt="Projekt 2 Vorschau" />
+          <span class="project-name">Projekt 2</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projekt 3 -->
+    <div class="event right">
+      <div class="event-content">
+        <a href="https://projekt3.de" class="project-tile">
+          <img src="assets/img/placeholder3.jpg" alt="Projekt 3 Vorschau" />
+          <span class="project-name">Projekt 3</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projekt 4 -->
+    <div class="event left">
+      <div class="event-content">
+        <a href="https://projekt4.de" class="project-tile">
+          <img src="assets/img/placeholder4.jpg" alt="Projekt 4 Vorschau" />
+          <span class="project-name">Projekt 4</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projekt 5 -->
+    <div class="event right">
+      <div class="event-content">
+        <a href="https://projekt5.de" class="project-tile">
+          <img src="assets/img/placeholder5.jpg" alt="Projekt 5 Vorschau" />
+          <span class="project-name">Projekt 5</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Reflexion -->
+    <div class="event left">
+      <div class="event-content">
+        <a href="https://reflexion.de" class="project-tile">
+          <img src="assets/img/placeholder6.jpg" alt="Reflexion Vorschau" />
+          <span class="project-name">Reflexion</span>
+        </a>
+      </div>
+    </div>
+
   </main>
 </body>
 </html>
