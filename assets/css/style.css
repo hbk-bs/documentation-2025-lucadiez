@@ -1,0 +1,148 @@
+/* Grundlayout */
+body {
+  background: var(--white-color);
+}
+
+.logo-container {
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Timeline-Grundstruktur */
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 900px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 32px;
+  width: 2px;
+  background: var(--black-color);
+  z-index: 0;
+}
+
+/* Einzelnes Event */
+.event {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.event::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: var(--main-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.event-content {
+  margin-left: 3.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Projektkachel */
+.project-tile {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ddd;
+  display: block;
+  border: 0.175rem solid;
+  border-color: var(--black-color);
+}
+
+.project-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-name {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-tile:hover .project-name {
+  opacity: 1;
+}
+
+.project-tile:hover {
+  box-shadow: 0 0 25px var(--main-color); /* main-color mit Transparenz */
+  transition: box-shadow 0.3s ease-in-out;
+  border: 0.175rem solid var(--main-color);
+}
+
+
+/* === Desktop Layout: Links und Rechts abwechselnd === */
+@media (min-width: 768px) {
+  .timeline {
+    padding: 4rem 2rem;
+  }
+
+  .timeline-line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .event {
+    width: 50%;
+  }
+
+  .event.left {
+    align-self: flex-start;
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+
+  .event.left .event-content {
+    margin-left: 0;
+    margin-right: 3.5rem;
+  }
+
+  .event.left::before {
+    left: auto;
+    right: 25px;
+  }
+
+  .event.right {
+    align-self: flex-end;
+  }
+
+  .event-content {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
