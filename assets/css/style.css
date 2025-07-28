@@ -131,7 +131,7 @@ h1 {
   gap: 1rem;
   max-width: 800px;
   width: 100%;
-  padding: 20px 50px;
+  padding: 50px 50px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -161,13 +161,8 @@ h1 {
 }
 
 .video-preview {
-  margin: 0 0 20px 0;
   border: var(--black-color) 0.1rem solid;
   border-radius: 0.5rem;
-}
-
-.image-gallery {
-  margin: 0 0 20px 0;
 }
 
 /*footer*/
