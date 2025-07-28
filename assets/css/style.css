@@ -127,7 +127,7 @@ h1 {
 
 .back-to {
   display: flex;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   gap: 1rem;
   max-width: 800px;
   width: 100%;
@@ -139,9 +139,9 @@ h1 {
 
 .back-to a {
   flex: 1;
-  display: flex; /* ← NEU */
-  justify-content: center; /* ← NEU */
-  align-items: center; /* ← NEU */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1rem;
   border-radius: 0.5rem;
