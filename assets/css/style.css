@@ -160,6 +160,12 @@ h1 {
   border: 0.1rem solid var(--main-color);
 }
 
+.video-preview {
+  margin: 0 0 20px 0;
+  border: var(--black-color) 0.1rem solid;
+  border-radius: 0.5rem;
+}
+
 /*footer*/
 footer {
   background-color: white;
