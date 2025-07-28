@@ -3,6 +3,12 @@ body {
   background: var(--white-color);
 }
 
+/*Überschriften*/
+h1 {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
 .logo-container {
   text-align: center;
   padding: 1rem;
@@ -28,12 +34,13 @@ body {
 .timeline-line {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 32px;
   width: 2px;
+  height: 100%;
   background: var(--black-color);
   z-index: 0;
 }
+
 
 /* Einzelnes Event */
 .event {
@@ -100,11 +107,64 @@ body {
 }
 
 .project-tile:hover {
-  box-shadow: 0 0 25px var(--main-color); /* main-color mit Transparenz */
+  box-shadow: 0 0 25px var(--main-color);
   transition: box-shadow 0.3s ease-in-out;
   border: 0.175rem solid var(--main-color);
 }
 
+/* Unterseiten */
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .reflection {
+    max-width: 800px;
+    margin: 0 50px;
+  }
+
+.back-to {
+  display: flex;
+  gap: 1rem;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.back-to a {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--sec-color);
+  color: var(--black-color);
+  border: 0.1rem solid var(--black-color);
+  transition: all 0.2s ease-in-out;
+  min-width: 0;
+}
+
+.back-to a:hover {
+  background-color: var(--black-color);
+  color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  transition: box-shadow 0.3s ease-in-out;
+  border: 0.1rem solid var(--main-color);
+}
+
+/*footer*/
+footer {
+  background-color: white;
+  padding: 20px 10px;
+
+}
+.footer {
+  text-align: center;
+}
 
 /* === Desktop Layout: Links und Rechts abwechselnd === */
 @media (min-width: 768px) {
