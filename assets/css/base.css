@@ -90,18 +90,6 @@ button:hover {
 	color: var(--sec-color);
 }
 
-a {
-	background-color: var(--sec-color);
-	color: var(--black-color);
-	/* Farbe von Links */
-}
-
-a:hover {
-	color: var(--sec-color);
-	background-color: var(--black-color);
-	/* Farbe vom Link bei Hover */
-}
-
 @media (min-width: 768px) {
 	html {
 		font-size: 110%;
