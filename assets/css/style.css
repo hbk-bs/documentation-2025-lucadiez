@@ -163,6 +163,15 @@ h1 {
 .video-preview {
   border: var(--black-color) 0.1rem solid;
   border-radius: 0.5rem;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;         
+  display: block;         
+}
+
+#kalorienvideo {
+  max-width: 100%;
+  height: auto;
 }
 
 /*footer*/
