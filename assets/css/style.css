@@ -3,6 +3,9 @@ body {
   background: var(--white-color);
 }
 
+main {
+  flex-grow: 1;
+}
 /*Überschriften*/
 h1 {
   padding: 20px 0 0 0;
